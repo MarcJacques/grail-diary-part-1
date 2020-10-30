@@ -11,7 +11,7 @@
         <!--Grail Diary-->
         <scene sceneID="0YI-he-8Am">
             <objects>
-                <tableViewController id="vfI-0z-Nat" sceneMemberID="viewController">
+                <tableViewController id="vfI-0z-Nat" customClass="POIsTableViewController" customModule="Grail_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lmv-67-MsG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="6Hx-m8-Awd" kind="show" id="rla-Xg-lue"/>
+                                    <segue destination="6Hx-m8-Awd" kind="show" identifier="POIDetailShowSegue" id="rla-Xg-lue"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,7 +64,7 @@
                     <navigationItem key="navigationItem" title="Grail Diary" id="kVl-E5-azt">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="PS5-2S-uIX">
                             <connections>
-                                <segue destination="mMD-rm-gys" kind="presentation" id="KCn-a8-l6O"/>
+                                <segue destination="mMD-rm-gys" kind="presentation" identifier="AddPOIModalSegue" id="KCn-a8-l6O"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="-1110.144927536232" y="-234.375"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="FhJ-21-GeX">
             <objects>
-                <viewController id="6Hx-m8-Awd" sceneMemberID="viewController">
+                <viewController id="6Hx-m8-Awd" customClass="POIDetailViewController" customModule="Grail_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oVT-J8-o4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
         <!--Title-->
         <scene sceneID="i6f-Nt-5Dc">
             <objects>
-                <viewController id="mMD-rm-gys" sceneMemberID="viewController">
+                <viewController id="mMD-rm-gys" customClass="AddPOIViewController" customModule="Grail_Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7R6-MU-QtZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

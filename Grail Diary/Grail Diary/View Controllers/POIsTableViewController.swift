@@ -8,6 +8,8 @@
 import UIKit
 
 class POIsTableViewController: UITableViewController {
+    
+    var POIs = [POI]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
